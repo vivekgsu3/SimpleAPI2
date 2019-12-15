@@ -34,6 +34,10 @@ namespace SimpleAPI2
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseHsts();
+            }
 
             app.UseMvc();
         }
